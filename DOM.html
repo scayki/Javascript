@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: black;
+            font-size: larger;
+            font: normal pt50 arial;
+            color: aliceblue;
+        }
+    </style>
+    <link rel="shortcut icon" href="cursoemvideo.png" type="image/x-icon">
+</head>
+<body>
+    <h1><strong>Olá</strong></h1>
+    <h1 id="stop">PAROUUUU</h1>
+    <h2>Usando o DOM</h2>
+
+    <script>
+        h1 = window.document.getElementsByTagName("h1")[0]
+        h1_0 = window.document.getElementById('stop')
+        corpo = window.document.body
+        corpo.style.background = 'blue'
+        h1.style.color = 'pink'
+        document.write(h1.innerHTML) 
+        document.write(h1.innerText)
+        document.write(h1_0.innerText)
+        h1_0.style.background = "yellow"
+    </script>
+    
+</body>
+</html>

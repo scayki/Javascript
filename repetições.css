@@ -1,0 +1,15 @@
+body{
+    background: rgb(107, 107, 235);
+}
+section{
+    background: white;
+    border-radius: 9px;
+    text-align: center;
+    width: 350px;
+    padding: 10px;
+    margin: auto;
+}
+header{
+    color: white;
+    text-align: center;
+}
