@@ -4,31 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript</title>
-    <style>
-        body {
-            background-color: darkgoldenrod;
-        }
-        h1 {
-            color: aquamarine;
-        }
-    </style>
-    <link rel="shortcut icon" href="cursoemvideo.png" type="image/x-icon">
+    <title>Hora do dia</title>
+    <link rel="stylesheet" href="periodododia.css">
 </head>
-<body>
-    <a href="DOM.html">clique aqui</a>
-    <H1>Olá, mundo</H1>
-    <script>
-        nome = prompt("digite seu nome")
-        num = parseInt(prompt("digite um número"))
-        nomecont = nome.length
-        nomebig = nome.toUpperCase()
-        nomesmall = nome.toLowerCase()
-        r = num>=10?"mais de 10":"menos de 10"
-        document.write(`Olá ${nome}, seu nome tem ${nomecont} letras. ${nomebig} e ${nomesmall} ${num.toFixed(2).replace('.',',')} <br/>` )
-        document.write(num.toLocaleString('pt-br', {style: 'currency', currency: 'usd'})) 
-        document.write(r)
-
-    </script>
+<body onload="carregar()"> <!--Quando carregar a página, a função carregar será chamada-->
+    <header>
+        <h1>Que horas são?</h1>
+    </header>
+    <section>
+        <div id="msg"> <!---- aqui é a mensagem --->
+            aqui vai aparecer a mensagem
+        </div>
+        <div id="foto">  <!--Como recortar a foto sem editar: 
+            <div>
+            <img id="img" style="border-radius: 50%" width="250" height="250" src="manha.png" alt="Foto do Horário">
+     </div>
+     -->
+            <img id="imagem"  src="fotos/manhã.png" alt="foto manhã">
+        </div>
+    </section>
+    <footer>
+        <p>&copy;@scayki</p>
+    </footer>
+    <script src="periodododia.js"></script>
+    
 </body>
 </html>
